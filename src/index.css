@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-arabic: "Times New Roman", serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  
+  --color-emerald-50: #ecfdf5;
+  --color-emerald-100: #d1fae5;
+  --color-emerald-500: #10b981;
+  --color-emerald-600: #059669;
+  --color-emerald-700: #047857;
+  --color-emerald-800: #065f46;
+  --color-emerald-900: #064e3b;
+  
+  --color-gold-400: #fbbf24;
+  --color-gold-500: #f59e0b;
+}
+
+/* Islamic Geometric Background Pattern */
+.islamic-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l5.878 18.09h19.021L39.51 29.27 45.388 47.36 30 36.18 14.612 47.36 20.49 29.27 5.101 18.09h19.021L30 0z' fill='%23059669' fill-opacity='0.08' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.dark .islamic-pattern {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l5.878 18.09h19.021L39.51 29.27 45.388 47.36 30 36.18 14.612 47.36 20.49 29.27 5.101 18.09h19.021L30 0z' fill='%23059669' fill-opacity='0.06' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+/* Smooth text rendering for Arabic */
+.arabic-font {
+  font-family: var(--font-arabic);
+  direction: rtl;
+}
+
+/* Base custom scrollbar for absolute premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Hide scrollbar for horizontal mobile categories */
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+.hide-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
